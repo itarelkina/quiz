@@ -7,8 +7,26 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
   <body>
+  <header class="row">
+    <div class="col-3">
+    <div class="circle">
+    <br />
+      Quiz
+    </div>
+    </div>
+    <div class="col-4 slogan">
+      Quiz is about effectively organizing the workflow around opened insident tickets.
+    </div>
+    <div class="col-5">
+      <%= link_to 'Open a Ticket', '#' %>
+        </div>
+  </header>
+  <hr />
+  <br class="clear" />
     <%= yield %>
   </body>
 </html>
+hr {
+  clear:both;
+}
