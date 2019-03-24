@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'places#index'
+  root 'tickets#index'
+  resources :quotes
 end
