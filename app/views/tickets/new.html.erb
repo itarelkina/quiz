@@ -1,0 +1,7 @@
+<h1>Enter Your Quote Details</h1>
+<%= simple_form_for @ticket do |f| %>
+  <%= f.input :Ticket_details %>
+  <%= f.input :owner %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
