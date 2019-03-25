@@ -1,11 +1,9 @@
-<h2>
-<span>Ticket#: <%= @ticket.id %></span>
-</h2>
- 
-<h1><%= @ticket.Ticket_details %></h1>
-<h2 class="float-right">Opened by:  <%= @ticket.owner %></h2>
- 
-<br class="clear" />
-<br />
-<br />
-<br />
+<% @ticket.each do |ticket| %>
+    <div>
+      <h1><%= ticket.id %></h1><br />
+      <i><%= ticket.Ticket_details %></i><br />
+      <i><%= ticket.owner %></i><br /><br />
+    </div>
+    <hr />
+  <% end %> 
+

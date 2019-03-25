@@ -1,8 +1,6 @@
 class TicketsController < ApplicationController
     def index
-        @ticket = Ticket.find(:all, [])
-        
-        # Ticket.all.sample
+        @ticket = Ticket.all
     end
 
     def new
